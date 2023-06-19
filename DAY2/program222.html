@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Build a Survey Form using HTML</title>
+</head>
+<body bgcolor="#ddeecc">
+    <h1>Training Survey Form</h1>
+    <!-- Create Form -->
+    <form>
+        <table>
+            <!-- Name -->
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" placeholder="Enter your name"></td>
+            </tr>
+            
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" placeholder="Enter your email"></td>
+            </tr>
+            
+            <!-- Age -->
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="text" id="age" placeholder="Enter your age"></td>
+            </tr>
+            
+            <!-- Role -->
+            <tr>
+                <td><label for="role">Which option best describes you?</label></td>
+                <td>
+                    <select name="role">
+                        <option value="student">Student</option>
+                        <option value="intern">Intern</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Recommendation -->
+            <tr>
+                <td><label>Would you recommend MTICA to a friend?</label></td>
+                <td>
+                    <label for="recommed-1">
+                        <input type="radio" id="recommed-1" name="recommed">Yes</input>
+                    </label>
+                    <label for="recommed-2">
+                        <input type="radio" id="recommed-2" name="recommed">No</input>
+                    </label>
+                    <label for="recommed-3">
+                        <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+                    </label>
+                </td>
+            </tr>
+            
+            <!-- Languages and Frameworks -->
+            <tr>
+                <td>
+                    <label>Languages and Frameworks known<small>(Check all that apply)</small></label>
+                </td>
+                <td>
+                    <label for="inp-1"><input type="checkbox" name="inp">C</label>
+                    <label for="inp-2"><input type="checkbox" name="inp">C++</label>
+                    <label for="inp-3"><input type="checkbox" name="inp">C#</label>
+                    <label for="inp-4"><input type="checkbox" name="inp">Java</label>
+                    <label for="inp-5"><input type="checkbox" name="inp">Python</label>
+                    <label for="inp-6"><input type="checkbox" name="inp">JavaScript</label>
+                    <label for="inp-7"><input type="checkbox" name="inp">React</label>
+                    <label for="inp-8"><input type="checkbox" name="inp">Angular</label>
+                    <label for="inp-9"><input type="checkbox" name="inp">Django</label>
+                    <label for="inp-10"><input type="checkbox" name="inp">Spring</label>
+                </td>
+            </tr>
+            
+            <!-- Comments -->
+            <tr>
+                <td>
+                  <label>Any comments or suggestions <textarea rows="5" cols="20"name="comment">
+                 </label>
+                 </textarea>
+                 </td>
+                 </tr>
+                 </br>
+ <tr>
+                <td>
+                  <label>
+              <input type="submit" name="submit" value="submit"/>
+  </label>
+</td>
+</tr>
+</head>
+</html>
