@@ -1,0 +1,40 @@
+<html><head>
+<link rel="stylesheet" href="cssnav.css">
+</head>
+<body bgcolor=#cococo>
+<div class="navbar">
+<a href="#">Home</a>
+<div class="dropdown">
+<button class="dropbtn">Frames</button>
+<div class="dropdown-content">
+<a href="Horizontal.html">Horizontal</a>
+<a href="Vertical.html">Vertical</a>
+<a href="Mixed.html">Mixed</a>
+<a href="Customized.html">Customized</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">Table</button>
+<div class="dropdown-content">
+<a href="#">T1</a>
+<a href="#">T2</a>
+<a href="#">T3</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">List</button>
+<div class="dropdown-content">
+<a href="#">Ordered List</a>
+<a href="#">Unordered List</a>
+<a href="#">Description List</a>
+</div></div>
+<button class="dropbtn">JavaScript</button>
+<div class="dropdown-content">
+         <a href="javascript1.html">js-1</a>
+         <a href="javascript2.html">js-2</a>
+         <a href="javascript3.html">js-3</a>
+		 </div></div>
+<div class="login">
+<a href="#">Login</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+  
+<head>
+    <style>
+    body {
+        text-align: left;
+    }
+      
+    h1 {
+        color: green;
+    }
+      
+    table.one {
+        
+        /* Styling border collapse for table one. */
+        border-collapse: collapse;
+    }
+      
+    table.two {
+        
+        /* Styling border separate for table two. */
+        border-collapse: separate;
+    }
+      
+    table,
+    td,
+    th {
+        border: 1.5px solid blue;
+    }
+    </style>
+</head>
+  
+<body>
+    <h1>GeeksforGeeks</h1>
+    <h2>borders collapsed:</h2>
+    <table class="one">
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>A_B_C</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X_Y_Z</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>borders separated:</h2>
+    <table class="two">
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>A_B_C</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X_Y_Z</td>
+        </tr>
+    </table>
+</body>
+  
+</html>

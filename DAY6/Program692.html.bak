@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="#">Home</a>
+
+<div class="dropdown">
+<button class="dropbtn">Frames</button>
+<div class="dropdown-content">
+         <a href="Horizontal.html">Horizontal</a>
+         <a href="Vertical.html">Vertical</a>
+         <a href="Mixed.html">Mixed</a>
+		 <a href="Customized.html">Customized</a>
+		 </div></div>
+
+<div class="dropdown">
+<button class="dropbtn">Table</button>
+<div class="dropdown-content">
+         <a href="#">simple Table</a>
+         <a href="#">complex Table</a>
+         <a href="#">customized Table</a>
+		 
+		 </div></div>
+<div class="dropdown">
+<button class="dropbtn">List</button>
+<div class="dropdown-content">
+         <a href="#">Ordered List</a>
+         <a href="#">Unordered List</a>
+         <a href="#">Description List</a>
+		 </div></div>
+
+		 <div class="dropdown">
+<button class="dropbtn">CSS</button>
+<div class="dropdown-content">
+         <a href="CSS1.html">CSS-1</a>
+         <a href="CSS2.html">CSS-2</a>
+         <a href="CSS3.html">CSS-3</a>
+	<a href="program695.html">Feedback</a>
+		 </div></div>
+<div class="Login">
+<a href="Login.html">Login</a>
+<h2>Aligned Dropdown Content</h2>
+<p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Left</button>
+  <div class="dropdown-content" style="left:0;">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Right</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+

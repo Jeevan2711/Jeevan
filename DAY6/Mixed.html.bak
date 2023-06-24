@@ -1,0 +1,39 @@
+<html><head>
+<link rel="stylesheet" href="cssnav.css">
+</head>
+<body bgcolor=#cococo>
+<div class="navbar">
+<a href="#">Home</a>
+<div class="dropdown">
+<button class="dropbtn">Frames</button>
+<div class="dropdown-content">
+<a href="Horizontal.html">Horizontal</a>
+<a href="Vertical.html">Vertical</a>
+<a href="Mixed.html">Mixed</a>
+<a href="Customized.html">Customized</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">Table</button>
+<div class="dropdown-content">
+<a href="#">T1</a>
+<a href="#">T2</a>
+<a href="#">T3</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">List</button>
+<div class="dropdown-content">
+<a href="#">Ordered List</a>
+<a href="#">Unordered List</a>
+<a href="#">Description List</a>
+</div></div>
+<div class="login">
+<a href="#">Login</a>
+</div>
+</div>
+<iframe src="https://www.mtitech.edu.in//"height="500px"width="350px"></iframe>
+<iframe src="https://forests.ap.gov.in//"height="500px"width="350px"></iframe>
+<iframe src="https://forests.ap.gov.in//"height="99px"width="150px"></iframe>
+<iframe src="https://www.mtitech.edu.in//"height="200px"width="150px"></iframe>
+
+</body>
+</html>
