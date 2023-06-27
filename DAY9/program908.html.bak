@@ -1,0 +1,36 @@
+var selectedRow =null
+// form submit function
+function onFormSubmit ()
+{
+if(VALIDATE())
+{
+  var formData=readFormData();
+  if(selectedRow==null)
+   {
+    insertNewRecord(formData);
+    }
+    else
+    {
+    updateRecord(formData);
+    }
+    resetForm();
+    }
+    }
+   function readFormData()
+   {
+   var formData=();
+    {
+    formData["username"]=document.getElementById("userName").value;
+    formData["rollNo"]=document.getElementById("rollNo").value;
+    formData["stdclass"]=document.getElementById("stdclass").value;
+    formData["tsub"]=document.getElementById("tsub").value;
+    formData["age"]=document.getElementById("age").value;
+
+return formData;
+}}
+function insertNewRecord(data)
+{
+var table=document.getElementByTagName('tbody')[0];
+var newRow=table.insertRow(table.length);
+cell1=newRow.insertCell(0);
+cell1.innerHTML=data.userName

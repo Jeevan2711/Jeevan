@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Add Student Records</title>
+</head>
+<body>
+  <h1>Add Student Records</h1>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
+In this code, the <label> element is used to associate a label with an input field. The for attribute in the <label> element specifies which input field the label is associated with. The id attribute in the input fields is used to uniquely identify them.
+
+You can add more fields to the form as needed and customize the appearance and behavior using CSS and JavaScript.
+
+
+
+
+
+

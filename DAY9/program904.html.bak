@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Records</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+	  	  
+   	   background-color: pink;
+
+    }
+
+    h1 {
+      text-align: center;
+
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 600px;
+	   background-color: pink;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e9e9e9;
+    }
+
+    .add-record {
+      margin: 20px auto;
+      width: 600px;
+    }
+
+    .add-record label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .add-record input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .add-record button {
+      display: block;
+      margin: 10px 0;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .add-record button:hover {
+      background-color: #0056b3;
+    }
+
+    .add-record .submit-exit-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .add-record .submit-exit-buttons button {
+      width: 48%;
+    }
+  </style>
+  <script>
+    function addRecord() {
+      var name = document.getElementById('name').value;
+      var id = document.getElementById('id').value;
+      var aadhaar = document.getElementById('aadhaar').value;
+      var course = document.getElementById('course').value;
+      var age = document.getElementById('age').value;
+
+
+
+      // Check if any of the fields are empty
+      if (name === '' || id === '' || aadhaar === '' || course === '' || age === '') {
+        alert('Please fill in all fields.');
+        return; // Stop execution if any field is empty
+      }
+
+
+      var table = document.getElementById('records');
+      var row = table.insertRow(-1);
+      var nameCell = row.insertCell(0);
+      var idCell = row.insertCell(1);
+      var aadhaarCell = row.insertCell(2);
+      var courseCell = row.insertCell(3);
+      var ageCell = row.insertCell(4);
+
+      nameCell.innerHTML = name;
+      idCell.innerHTML = id;
+      aadhaarCell.innerHTML = aadhaar;
+      courseCell.innerHTML = course;
+      ageCell.innerHTML = age;
+
+      clearFields();
+    }
+
+    function clearRecords() {
+      var table = document.getElementById('records');
+      while (table.rows.length > 1) {
+        table.deleteRow(1);
+      }
+    }
+
+    function clearFields() {
+      document.getElementById('name').value = '';
+      document.getElementById('id').value = '';
+      document.getElementById('aadhaar').value = '';
+      document.getElementById('course').value = '';
+      document.getElementById('age').value = '';
+    }
+
+    function exitForm() {
+      clearFields();
+      clearRecords();
+    }
+  </script>
+</head>
+<body>
+  <h1>Student Records</h1>
+
+  <form class="add-record">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+
+    <label for="aadhaar">Aadhaar:</label>
+    <input type="text" id="aadhaar" name="aadhaar" required>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" required>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required>
+
+    <div class="submit-exit-buttons">
+      <button type="button" onclick="addRecord()">Submit</button>
+      <button type="button" onclick="exitForm()">Exit</button>
+    </div>
+  </form>
+
+  <table id="records">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Aadhaar</th>
+      <th>Course</th>
+      <th>Age</th>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+

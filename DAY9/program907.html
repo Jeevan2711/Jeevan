@@ -1,0 +1,46 @@
+<html>
+ <title>Student Records</title><body>
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 600px;
+	   background-color: pink;
+    }
+
+  <h1>Student Records</h1>
+
+  <form class="add-record">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+
+    <label for="aadhaar">Aadhaar:</label>
+    <input type="text" id="aadhaar" name="aadhaar" required>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" required>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required>
+
+    <div class="submit-exit-buttons">
+      <button type="button" onclick="addRecord()">Submit</button>
+      <button type="button" onclick="exitForm()">Exit</button>
+    </div>
+  </form>
+
+  <table id="records">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Aadhaar</th>
+      <th>Course</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+</body>
+</html>
