@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>MTICA Registration Form</title>
+<script>
+function validateForm() {
+  var firstName = document.forms["registrationForm"]["first_name"].value;
+  var lastName = document.forms["registrationForm"]["last_name"].value;
+  var username = document.forms["registrationForm"]["username"].value;
+  var password = document.forms["registrationForm"]["password"].value;
+  var address = document.forms["registrationForm"]["address"].value;
+  var contact = document.forms["registrationForm"]["contact"].value;
+
+  if (firstName === "" || lastName === "" || username === "" || password === "" || address === "" || contact === "") {
+    alert("Please fill in all fields");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<h1><center>MTICA Register Form</center></h1>
+<center>
+<form name="registrationForm" action="MTICA_register" method="post" onsubmit="return validateForm()">
+			<table style="with: 60%">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="first_name" /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="last_name" /></td>
+				</tr>
+				<tr>
+					<td>UserName</td>
+					<td><input type="text" name="username" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address" /></td>
+				</tr>
+				<tr>
+					<td>Contact No</td>
+					<td><input type="text" name="contact" maxlength="10" /></td>
+				</tr>
+			</table>
+			    <a href="Registrationform1.jsp">Submit</a>
+</form>
+</center>
+</body>
+</html>
